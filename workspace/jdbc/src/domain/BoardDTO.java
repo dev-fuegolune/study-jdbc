@@ -1,6 +1,6 @@
 package domain;
 
-public class BoardDTO {
+public class BoardDTO {//게시글 작성자와 게시글의 정보를 합친 클래스. 화면단에 송출?할 용도이기 떄문에 DTO로 만들어서 사용
 	private Long userId;
 	private String userIdentification;
 	private String userName;

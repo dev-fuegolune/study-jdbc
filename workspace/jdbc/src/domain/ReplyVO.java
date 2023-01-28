@@ -1,14 +1,14 @@
 package domain;
 
 public class ReplyVO {
-	private Long replyId;
-	private String replyContent;
-	private String replyRegisterDate;
-	private String replyUpdateDate;
-	private Long userId;
-	private Long boardId;
-	private Long replyGroup;
-	private Long replyDepth;
+	private Long replyId;//pk 댓글 번호
+	private String replyContent;// 댓글 내용
+	private String replyRegisterDate;// 댓글 등록 날짜
+	private String replyUpdateDate;//댓글 수정 날짜
+	private Long userId;//유저의 pk를 fk로 가져옴
+	private Long boardId;//board의 pk를 fk로 가져옴
+	private Long replyGroup;//댓글 그룹 번호
+	private Long replyDepth;//대댓글 계층
 	
 	public ReplyVO() {;}
 

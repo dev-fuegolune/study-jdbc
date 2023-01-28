@@ -1,25 +1,25 @@
 package domain;
-
+//유저와 댓글 합쳐서 화면에 사용할 클래스
 public class ReplyDTO {
-	private Long replyCount;
-	private Long replyId;
-	private String replyContent;
-	private String replyRegisterDate;
-	private String replyUpdateDate;
-	private Long userId;
-	private Long boardId;
-	private Long replyGroup;
-	private Long replyDepth;
-	private String userIdentification;
-	private String userName;
-	private String userPassword;
-	private String userPhone;
-	private String userNickname;
-	private String userEmail;
-	private String userAddress;
-	private String userBirth;
-	private String userGender;
-	private String userRecommenderId;
+	private Long replyCount;//댓글 전체조회시 그룹별로 조회하기 위해서 대댓글의 숫자를 센 replycount를 dto에 만들어줌
+	private Long replyId;//pk
+	private String replyContent;//댓글내용
+	private String replyRegisterDate;//등록 시 시스템 시간
+	private String replyUpdateDate;//수정시 시스템 시간
+	private Long userId;//댓글fk 댓글을 누르면 댓글 쓴 사람의 정보를 볼수 있도록 조인해서 보냄
+	private Long boardId;//게시글fk
+	private Long replyGroup;//댓글 그룹. 댓글의 pk인 replyid와 같은 숫자를 써서 구분
+	private Long replyDepth;//댓글의 계층 여기서는 대댓글까지 있으므로 1까지만 있다.
+	private String userIdentification;//댓글 작성자 아이디
+	private String userName;//이름
+	private String userPassword;//비번
+	private String userPhone;//폰번호
+	private String userNickname;//닉네임
+	private String userEmail;//이메일
+	private String userAddress;//주소
+	private String userBirth;//생일
+	private String userGender;//성별
+	private String userRecommenderId;//추천인 아이디
 	
 	public ReplyDTO() {;}
 
